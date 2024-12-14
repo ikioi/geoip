@@ -99,7 +99,7 @@ done
 
 # Adding space to separate input text from output text
 echo "####################################### Processing #######################################"
-echo ""
+echo
 
 # Extract all unique IP addresses (IPv4) from the input
 ips=$(echo "$input" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | awk '!seen[$0]++')
